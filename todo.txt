@@ -1,0 +1,33 @@
+Date : 28/09/2024
+
+Version 01 : Objectifs Espagnol
+Duolingo : y
+Exos dele : n
+Noticias : y
+Mosalingua spanish: y
+Caféyn vocable : y
+Mondly : y
+Objectifs Japonais
+Kana : y
+Drops : y
+Japonais : y
+Katakanapro : y
+Minna no Nihongo : n
+Devoirs japonais : n
+Objectifs Python
+100 jours de code : y
+Code Academy : y
+Pybites : y
+Datacamp : y
+Kaggle : n
+Repli : y
+Real Python : y
+Projet Python : y
+Objectifs Sport/Sante
+Sport : y
+Apprentissage : n
+Fruits : y
+Legumes : y
+Proteines : y
+Objectifs Famille
+Famille : y
