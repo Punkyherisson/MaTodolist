@@ -1,3 +1,17 @@
+import csv
+
+def sauvegarder_csv(date, categories):
+    with open("todo.csv", mode="a", newline='', encoding='utf-8') as fichier_csv:
+        writer = csv.writer(fichier_csv)
+        # Ligne d’en-tête si le fichier est vide
+        if fichier_csv.tell() == 0:
+            writer.writerow(["Date", "Catégorie", "Tâche", "Fait ?"])
+        for categorie, taches in categories.items():
+            for tache, fait in taches.items():
+                writer.writerow([date, categorie, tache, fait])
+
+
+
 def demander_taches(categorie, taches):
     print(f"\n--- {categorie} ---")
     reponses = {}
@@ -51,6 +65,19 @@ def main():
         ecrire_section(fichier, "Famille", taches_famille)
 
     print("\n✅ Les tâches ont été enregistrées dans todo.txt.")
+
+
+    # Regrouper les catégories
+    toutes_les_taches = {
+        "Espagnol": taches_espagnol,
+        "Japonais": taches_japonais,
+        "Python": taches_python,
+        "Sport/Sante": taches_sante,
+        "Famille": taches_famille
+    }
+
+    # Export CSV
+    sauvegarder_csv(maDate, toutes_les_taches)
 
 if __name__ == "__main__":
     main()

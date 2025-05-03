@@ -1,4 +1,4 @@
-Date : 02/05/2025
+Date : 01/01/2002
 
 Version 01 :
 
@@ -7,7 +7,7 @@ Duolingo : o
 des exercices dele : o
 lu les noticias : o
 des mosalingua spanish : o
-un caféyn vocable : n
+un caféyn vocable : o
 Mondly : o
 
 Objectifs Japonais
@@ -15,7 +15,7 @@ Kana : o
 les drops : o
 Japonais : o
 katakanapro : o
-Minna no Nihongo : n
+Minna no Nihongo : o
 des devoirs japonais : n
 
 Objectifs Python
@@ -23,16 +23,16 @@ Objectifs Python
 Code Academy : n
 Pybites : n
 Datacamp : o
-Kaggle : n
+Kaggle : o
 Repli : o
 Real Python : o
 un projet Python : o
 
 Objectifs Sport/Sante
-du sport : n
+du sport : o
 de l'apprentissage : o
-des fruits : n
-des légumes : n
+des fruits : o
+des légumes : o
 des protéines : o
 
 Objectifs Famille
