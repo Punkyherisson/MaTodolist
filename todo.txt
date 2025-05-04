@@ -1,39 +1,25 @@
-Date : 01/01/2002
+Date : 04/05/2025
 
-Version 01 :
-
-Objectifs Espagnol
-Duolingo : o
-des exercices dele : o
-lu les noticias : o
-des mosalingua spanish : o
-un caféyn vocable : o
-Mondly : o
-
+Version 0.4
+Objectifs Langues
+Duolingo : Oui
+Mosalingua Spanish : Oui
+Exos DELE : Non
+Noticias : Non
+CafÃ©yn Vocable : Non
+Mondly : Oui
 Objectifs Japonais
-Kana : o
-les drops : o
-Japonais : o
-katakanapro : o
-Minna no Nihongo : o
-des devoirs japonais : n
-
+Kana : Oui
+Drops : Oui
+Minna no Nihongo : Non
 Objectifs Python
-100 jours de code : n
-Code Academy : n
-Pybites : n
-Datacamp : o
-Kaggle : o
-Repli : o
-Real Python : o
-un projet Python : o
-
-Objectifs Sport/Sante
-du sport : o
-de l'apprentissage : o
-des fruits : o
-des légumes : o
-des protéines : o
-
+Datacamp : Oui
+Real Python : Non
+Objectifs Sport / SantÃ©
+Sport : Oui
+Apprentissage : Oui
+Fruits : Oui
+LÃ©gumes : Oui
+ProtÃ©ines : Oui
 Objectifs Famille
-un truc pour la famille : o
+Famille : Oui
