@@ -1,5 +1,19 @@
 import csv
 import os
+from datetime import datetime
+
+def demander_date():
+    date_du_jour = datetime.today().strftime("%d/%m/%Y")
+    while True:
+        saisie = input(f"Entrez une date [par défaut : {date_du_jour}] : ").strip()
+        if not saisie:
+            return date_du_jour
+        try:
+            # Vérifie le format
+            datetime.strptime(saisie, "%d/%m/%Y")
+            return saisie
+        except ValueError:
+            print("❌ Format invalide. Utilisez jj/mm/aaaa.")
 
 def export_csv(date, reponses_dict, nom_fichier="todo.csv"):
     entetes = ["Date"] + list(reponses_dict.keys())
@@ -38,8 +52,8 @@ def ecrire_section(fichier, titre, taches):
         fichier.write(f"{tache} : {reponse}\n")
 
 def main():
-    print("# Essai de Todo en Python V0.4")
-    maDate = input("Entrez une date au format jj/mm/aaaa : ")
+    print("# Essai de Todo en Python V0.5")
+    maDate = demander_date()
 
     # Langues
     tacheDuolingo = menu_oui_non("Avez-vous fait Duolingo ?")
@@ -71,6 +85,13 @@ def main():
 
     # Famille
     tacheFamille = menu_oui_non("Avez-vous fait un truc pour la famille ?")
+
+    # Calcul du score
+    nb_total = len(reponses)
+    nb_oui = sum(1 for r in reponses.values() if r.lower() == "oui")
+    score = round((nb_oui / nb_total) * 100)
+    # Affichage
+    print(f"\n📊 Score du jour : {score}% ({nb_oui} Oui sur {nb_total})")
 
     # Écriture dans le fichier
     with open("todo.txt", "w", encoding="utf-8") as fichier:
@@ -112,6 +133,8 @@ def main():
         # Famille
         fichier.write("Objectifs Famille\n")
         fichier.write(f"Famille : {tacheFamille}\n")
+        # Ajouter au fichier texte
+        fichier.write(f"\n📊 Score du jour : {score}% ({nb_oui} Oui sur {nb_total})\n")
         print("\n✅ Les tâches ont été enregistrées dans todo.txt.")
 
 
@@ -134,8 +157,12 @@ def main():
     "Protéines": tacheProteines,
     "Famille": tacheFamille
 }
+    # Ajouter au CSV
+    reponses["Score (%)"] = score
     # Export CSV
     export_csv(maDate, reponses)
+   
+
 
 if __name__ == "__main__":
     main()

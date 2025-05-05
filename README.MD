@@ -1,14 +1,19 @@
-**Project description:**
-This is a simple Todo list which I use at the end of the day to check if I fulfilled my daily objectives and then dumps that to a file.
-In the furure, I will reorganize and new features
-**Installation:**
-Just run the program and at the end of the questions it will generate a text file
-**Execution and usage:**
-Project is currently version 0.2 and in french only
-**Used technologies:** Program is written in Python using code completion from replit.
-**Current features:**
-- Answer to questions related to the objectives of learning spanish, japanese and python
-- Near Future: I plan to add points and intensity measurement.
-**Contributors:** Me 
-**Change log:** Version 0.1
-**License:** MIT licence seems to be popular and really open.
+# ✅ Todo Journal - Version 0.5
+
+Petit outil Python minimaliste pour suivre ses tâches journalières sous forme de questions simples, avec export CSV automatique et calcul de score de productivité.
+
+## 🚀 Fonctionnalités
+
+- 📆 Suggestion automatique de la **date du jour** (modifiable par l'utilisateur).
+- 🧠 Saisie de tâches par catégorie avec réponse binaire **(Oui/Non ou 1/2)**.
+- 🧮 **Score de productivité** calculé automatiquement (% de "Oui").
+- 💾 **Export CSV automatique** (`todo.csv`) avec gestion de l’en-tête.
+- 📝 Export format texte (`todo.txt`) lisible et structuré.
+- 🔄 **Code modulaire** avec fonctions réutilisables.
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/TON-REPO/TodoJournal.git
+cd TodoJournal
+python3 todo.py
